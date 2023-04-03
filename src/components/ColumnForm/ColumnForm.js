@@ -1,9 +1,9 @@
+import React from 'react';
 import styles from './ColumnForm.module.scss';
 import { useState } from 'react';
 import Button from '../Button/Button';
 
 const ColumnForm = props => {
-    const [value, setValue] = useState('');
     const handleSubmit = e => {
         e.preventDefault();
         props.action({ title: title, icon: icon });
