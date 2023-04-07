@@ -7,14 +7,14 @@ import { addColumn } from '../../redux/store';
 
 const ColumnForm = (props) => {
 
-  const dispatch = useDispatch(); // tworzy funkcję dispatch, która pozwala na wywołanie akcji
-  const [title, setValue] = useState(''); // tworzy stan dla inputa i przypisuje mu wartość początkową '' (pusty string)
-  const [icon, setIcon] = useState(''); // tworzy stan dla inputa i przypisuje mu wartość początkową '' (pusty string)
+  const dispatch = useDispatch(); 
+  const [title, setValue] = useState(''); 
+  const [icon, setIcon] = useState(''); 
   const handleSubmit = (e) => {
-    // tworzy funkcję, która będzie wywoływana po kliknięciu w przycisk
-    e.preventDefault(); // zapobiega przeładowaniu strony po kliknięciu w przycisk
-    dispatch(addColumn({ id: shortid(), title, icon })); // wywołuje akcję ADD_COLUMN i przekazuje do niej obiekt z tytułem i ikoną
-    setValue(''); // czyści pole input po dodaniu nowej kolumny
+    
+    e.preventDefault(); 
+    dispatch(addColumn({ id: shortid(), title, icon })); 
+    setValue(''); 
     setIcon('');
   };
   return (
