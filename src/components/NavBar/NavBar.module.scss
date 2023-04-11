@@ -1,13 +1,15 @@
 @import '../../styles/settings.scss';
 
-nav{
-  background-color: darken($color-dark, 3%);;
+nav {
+  background-color: darken($color-dark, 3%);
+  ;
 
 }
 
 .navContainer {
   padding: 20px;
 }
+
 .navWrapper {
   display: flex;
   align-items: center;
@@ -16,12 +18,15 @@ nav{
 
 .navIcon {
   font-size: 24px;
+
   a {
-    color: #fff;
+    color: $color-light;
   }
 }
+
 .navList ul li {
-    list-style-type: none;
+  list-style-type: none;
+
   a {
     text-decoration: none;
     font-size: 18px;
@@ -31,5 +36,5 @@ nav{
 }
 
 .linkActive {
-  color: #fff;
+  color: $color-warning;
 }
