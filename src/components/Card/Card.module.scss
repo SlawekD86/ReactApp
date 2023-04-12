@@ -1,5 +1,4 @@
 @import '../../styles/settings.scss';
-
 .card {
     position: relative;
     background: $color-light;
@@ -10,4 +9,19 @@
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 16px;
+    :hover{
+        transform: scale(1.5);
+        transition: 1s;
+    }
+}
+
+.isActive {
+    color: $color-warning;
 }
