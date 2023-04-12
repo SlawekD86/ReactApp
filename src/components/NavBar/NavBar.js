@@ -8,7 +8,7 @@ const NavBar = () => {
       <div className={styles.navContainer}>
         <div className={styles.navWrapper}>
           <div className={styles.navIcon}>
-            <a href="/" aria-label="menu" className="fa fa-list"></a>
+            <a href="/" className="fa fa-list"> </a>
           </div>
           <div className={styles.navList}>
             <ul>
