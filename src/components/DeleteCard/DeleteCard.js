@@ -12,7 +12,9 @@ const DeleteCard = props => {
   };
 
   return (
-    <button className={styles.removeButton} onClick={handleRemove}><i className={'fa fa-trash'}/></button>
+    <button className={styles.removeButton} onClick={handleRemove} type="button">
+      <i className={'fa fa-trash'}/>
+    </button>
   );
 };
 
