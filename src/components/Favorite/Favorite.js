@@ -5,9 +5,8 @@ import Card from '../Card/Card';
 import styles from './Favorite.module.scss';
 import { getFavoriteCards } from '../../redux/cardsRedux';
 
-// Komponent wykorzystujący selektor getFavoriteCards do pobrania tablicy ulubionych kart z magazynu stanu Redux
 const Favorite = () => {
-  // Pobranie tablicy ulubionych kart
+
   const favoriteCards = useSelector(getFavoriteCards);
 
   return (
@@ -16,7 +15,6 @@ const Favorite = () => {
       <div className={styles.column}>
         {favoriteCards.length > 0 ? (
           <ul className={styles.cards}>
-            {/* Wyświetlenie kart z tablicy favoriteCards */}
             {favoriteCards.map((card) => (
               <Card key={card.id} title={card.title} id={card.id} isFavorite={card.isFavorite} />
             ))}
