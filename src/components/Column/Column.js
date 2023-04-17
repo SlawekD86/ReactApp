@@ -8,7 +8,7 @@ import { getFilteredCards } from '../../redux/columnsRedux';
 const Column = (props) => {
 
   const cards = useSelector(state => getFilteredCards(state, props.id));
-  console.log('column render')
+  
 
   return (
     <article className={styles.column}>

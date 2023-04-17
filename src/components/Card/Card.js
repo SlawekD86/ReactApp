@@ -17,7 +17,11 @@ const Card = (props) => {
       <li className={styles.card}>
         <span className={styles.cardTitle}>{props.title}</span>
         <div>
-          <button className={clsx(styles.button, props.isFavorite && styles.isActive)} onClick={handleFavorite}>
+          <button 
+            className={clsx(styles.button, props.isFavorite && styles.isActive)} 
+            onClick={handleFavorite}
+            type="button"
+          >
             <i className={'fa fa-star-o'} />
           </button>
           <DeleteCard id={props.id} />

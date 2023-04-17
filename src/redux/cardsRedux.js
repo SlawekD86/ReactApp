@@ -1,7 +1,7 @@
 import { strContains } from '../utils/strContains';
 //selectors
 export const getFilteredCards = ({ cards, searchString }, columnId) => cards.filter((card) => card.columnId === columnId && strContains(card.title, searchString));
-export const getIsFavoriteCards = ({ cards }) => cards.filter((card) => card.isFavorite === true);
+export const getFavoriteCards = ({ cards }) => cards.filter((card) => card.isFavorite === true);
 //actions 
 const createActionName = actionName => `app/lists/${actionName}`;
 const ADD_CARD = createActionName('ADD_CARD');
